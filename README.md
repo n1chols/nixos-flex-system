@@ -25,8 +25,9 @@
 }
 ```
 
-|
-v
+<p align="center">
+  <img src="https://iconduck.com/vectors/vctrh31kf9tg/media/svg/download" width="100">
+</p>
 
 ```nix
 {
