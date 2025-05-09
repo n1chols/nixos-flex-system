@@ -24,8 +24,8 @@
     "20.03-small".url = "github:NixOS/nixpkgs/nixos-20.03-small";
     "19.09".url = "github:NixOS/nixpkgs/nixos-19.09";
     "19.09-small".url = "github:NixOS/nixpkgs/nixos-19.09-small";
-    "19.03".url = "github:NixOS/nixpkgs/nixos-19.03";
-    "19.03-small".url = "github:NixOS/nixpkgs/nixos-19.03-small";
+    #"19.03".url = "github:NixOS/nixpkgs/nixos-19.03";
+    #"19.03-small".url = "github:NixOS/nixpkgs/nixos-19.03-small";
   };
   
   outputs = { self, inputs }: {
