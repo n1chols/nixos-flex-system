@@ -2,21 +2,21 @@
 {
   inputs = {
     nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
-    nixpkgs-24.11.url = "github:NixOS/nixpkgs/nixos-24.11";
-    nixpkgs-23.05.url = "github:NixOS/nixpkgs/nixos-23.05";
+    nixpkgs-24-11.url = "github:NixOS/nixpkgs/nixos-24.11";
+    nixpkgs-23-05.url = "github:NixOS/nixpkgs/nixos-23.05";
   };
 
-  outputs = { self, nixpkgs-unstable, nixpkgs-24.11, nixpkgs-23.05 }: {
+  outputs = { self, nixpkgs-unstable, nixpkgs-24-11, nixpkgs-23-05 }: {
     nixosConfigurations = {
       workstation = nixpkgs-unstable.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [ ... ];
       };
-      htpc = nixpkgs-24.11.lib.nixosSystem {
+      htpc = nixpkgs-24-11.lib.nixosSystem {
         system = "aarch64-linux";
         modules = [ ... ];
       };
-      macbook = nixpkgs-23.05.lib.darwinSystem {
+      macbook = nixpkgs-23-05.lib.darwinSystem {
         system = "aarch64-darwin";
         modules = [ ... ];
       };
