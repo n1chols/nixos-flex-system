@@ -28,7 +28,7 @@
     #"19.03-small".url = "github:NixOS/nixpkgs/nixos-19.03-small";
   };
   
-  outputs = { self, inputs }: {
+  outputs = { self }: {
     __functor = self: {
       arch ? "x86_64",
       version ? "unstable",
