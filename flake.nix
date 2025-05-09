@@ -1,6 +1,6 @@
 {
   outputs = { self }: {
-    __functor = {
+    __functor = self: {
       arch ? "x86_64",
       version ? "unstable",
       modules ? []
