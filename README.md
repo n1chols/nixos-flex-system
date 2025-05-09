@@ -17,7 +17,7 @@
         modules = [ ... ];
       };
       macbook = nixpkgs-23-05.lib.nixosSystem {
-        system = "aarch64-darwin";
+        system = "aarch64-linux";
         modules = [ ... ];
       };
     };
@@ -49,7 +49,6 @@
       };
       macbook = flex-system {
         arch = "aarch64";
-        platform = "darwin";
         version = "23.05";
         modules = [ ... ];
       };
