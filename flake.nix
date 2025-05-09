@@ -5,11 +5,12 @@
       modules ? []
     }: let
       system = "${arch}-linux";
+      pkgs = nixpkgs.legacyPackages.${system};
       lib = nixpkgs.lib;
     in lib.nixosSystem {
       inherit system;
       inherit modules;
-      specialArgs = { inherit lib; };
+      specialArgs = { inherit pkgs; inherit lib; };
     };
   };
 }
