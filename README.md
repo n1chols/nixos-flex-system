@@ -16,7 +16,7 @@
         system = "aarch64-linux";
         modules = [ ... ];
       };
-      macbook = nixpkgs-23-05.lib.darwinSystem {
+      macbook = nixpkgs-23-05.lib.nixosSystem {
         system = "aarch64-darwin";
         modules = [ ... ];
       };
